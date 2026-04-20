@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# PyInstaller
+*.spec
+build/
+dist/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Project Specific
+*.log
+*.sqlite3
+temp_ss.png
+Gerak_*.jpg
+System_Spec.txt
