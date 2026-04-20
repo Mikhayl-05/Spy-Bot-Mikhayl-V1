@@ -103,6 +103,180 @@ Project ini sangat cocok untuk belajar:
  └── assets/
 ```
 
+# ⚙️ Setup & Installation (Safe / Educational Use)
+
+## 📌 Requirements
+
+Pastikan environment kamu sudah siap:
+
+* OS: Windows 10 / 11
+* Python 3.10 atau lebih baru
+* Internet connection (untuk API)
+* Akun Telegram (untuk testing API)
+
+---
+
+## 1️⃣ Install Python
+
+Download dari:
+👉 [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+Saat install:
+
+* ✅ Centang **“Add Python to PATH”**
+* Klik **Install Now**
+
+Cek instalasi:
+
+```bash
+python --version
+```
+
+---
+
+## 2️⃣ Clone Repository
+
+```bash
+git clone https://github.com/Mikhayl-05/spy-bot-mikhayl-v1.git
+cd spy-bot-mikhayl-v1
+```
+
+---
+
+## 3️⃣ Setup Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+---
+
+## 4️⃣ Install Dependencies
+
+Karena di project kamu ada auto-installer, sebenarnya bisa langsung jalan.
+Tapi untuk best practice:
+
+```bash
+pip install -r requirements.txt
+```
+
+Kalau belum ada `requirements.txt`, bisa generate:
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+## 5️⃣ Konfigurasi API (Testing Only)
+
+Project ini menggunakan **Telegram Bot API** untuk komunikasi.
+
+### Cara setup:
+
+1. Buka Telegram
+
+2. Chat ke **@BotFather**
+
+3. Buat bot baru → dapatkan **TOKEN**
+
+4. Ambil Chat ID:
+
+   * Chat ke **@userinfobot**
+
+5. Masukkan ke dalam kode:
+
+```python
+TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"
+CHAT_ID = "YOUR_CHAT_ID"
+```
+
+> ⚠️ Gunakan hanya untuk testing di perangkat sendiri
+
+---
+
+## 6️⃣ Jalankan Program
+
+```bash
+python spy_bot.py
+```
+
+Jika berhasil:
+
+* Program akan aktif di background
+* Bot akan merespon command dari Telegram
+
+---
+
+## 🧪 Mode Testing yang Disarankan
+
+Gunakan hanya untuk:
+
+* ✅ Belajar API integration
+* ✅ Eksperimen automation
+* ✅ Testing di device sendiri
+* ✅ Debugging threading & system calls
+
+---
+
+## 🧠 Tips Debugging
+
+Jika error:
+
+### ❌ Module not found
+
+```bash
+pip install nama_module
+```
+
+### ❌ Permission error
+
+* Jalankan terminal sebagai Administrator
+
+### ❌ Kamera / audio tidak jalan
+
+* Pastikan device tidak dipakai aplikasi lain
+
+---
+
+## 🔒 Security Notes
+
+Untuk versi production / publik:
+
+* ❌ Jangan hardcode TOKEN
+* ✅ Gunakan `.env` file
+* ✅ Gunakan logging terbatas
+* ✅ Tambahkan authentication layer
+
+---
+
+## 🧩 Improvement Ideas (Portfolio Boost)
+
+Kalau mau bikin project ini lebih “recruiter-friendly”:
+
+* 🔹 Tambah GUI dashboard
+* 🔹 Ganti Telegram → Web Dashboard
+* 🔹 Tambah authentication system
+* 🔹 Logging system (structured logs)
+* 🔹 Modularisasi code (clean architecture)
+
+---
+
+## ⚠️ Important Notice
+
+Project ini ditujukan untuk:
+
+* Edukasi
+* Eksperimen pribadi
+* Pembelajaran sistem & automation
+
+❌ Jangan digunakan untuk:
+
+* Mengakses perangkat orang lain tanpa izin
+* Monitoring tanpa consent
+* Aktivitas ilegal
+
 ---
 
 ## ⚠️ DISCLAIMER
